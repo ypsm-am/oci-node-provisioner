@@ -6,13 +6,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Setup configuration from environment variables
-# config = {
-#    "user": os.getenv("OCI_USER_ID"),
-#    "key_content": os.getenv("OCI_PRIVATE_KEY"),
-#    "fingerprint": os.getenv("OCI_FINGERPRINT"),
-#    "tenancy": os.getenv("OCI_TENANCY_ID"),
-#    "region": os.getenv("OCI_REGION")
-#}
+ config = {
+    "user": os.getenv("OCI_USER_ID"),
+    "key_content": os.getenv("OCI_PRIVATE_KEY"),
+    "fingerprint": os.getenv("OCI_FINGERPRINT"),
+    "tenancy": os.getenv("OCI_TENANCY_ID"),
+    "region": os.getenv("OCI_REGION")
+}
 
 try:
     compute_client = oci.core.ComputeClient(config)
