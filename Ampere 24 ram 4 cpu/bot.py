@@ -9,7 +9,7 @@ load_dotenv()
 config = {
     "user": os.getenv("OCI_USER_ID"),
     "key_content": os.getenv("OCI_PRIVATE_KEY"),
-#    "fingerprint": os.getenv("OCI_FINGERPRINT"),
+    "fingerprint": os.getenv("OCI_FINGERPRINT"),
     "tenancy": os.getenv("OCI_TENANCY_ID"),
     "region": os.getenv("OCI_REGION")
 }
