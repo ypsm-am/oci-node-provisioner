@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Setup configuration from environment variables
- config = {
+config = {
     "user": os.getenv("OCI_USER_ID"),
     "key_content": os.getenv("OCI_PRIVATE_KEY"),
     "fingerprint": os.getenv("OCI_FINGERPRINT"),
